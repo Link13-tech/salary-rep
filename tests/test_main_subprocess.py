@@ -12,7 +12,7 @@ def test_main_script_runs():
         capture_output=True,
         text=True
     )
-    print(result.stdout)  # Полезно при отладке
+    print(result.stdout)
 
     assert result.returncode == 0
     assert "Design" in result.stdout
